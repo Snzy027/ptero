@@ -1,0 +1,69 @@
+# PteroStats config
+# If you need help, join our discord server here: https://discord.gg/zv6maQRah3
+
+# Bot Info's
+token: 'OTA4NDMxNjA5ODI3NTU3Mzg3.YY1o3Q.FIlIkMjb2J6ZMKUh6YCGfLosK08' # Put bot token here, check https://discord.dev to create and get bot token
+
+prefix: '~' # Bot's prefix for commands
+
+botstatus:
+  enable: false # Enable Custom Status (MUST BE "true" OR "false")
+  text: '' # Bot Status Message
+  type: '' # Bot Status Type. Ex: PLAYING, WATCHING, LISTENING, STREAMING
+
+# Channel and RefreshTime Configuration
+channel: '932503551249350696' # Put channel id here where the node sts embed will be sent
+refreshtime: 10 # Time interval when the embed is edited/refreshed (MUST BE IN SECONDS)
+
+# Uptime Monitor page linkg
+monitorLink: '' # Ex- https://stats.your.host (stats.your.host is an exmaple link of your stats page)
+
+#Admin Account API Key
+adminAccountAPIKey: 'ZYYXzpOponPfrJrAk1jTX8FL9mG0dzIWX4YTVVsZu5yf0eA8' # Put admin account's client API Key here. check https://your.host.url/account/api (your.host.url is an example link) to get the Client API Key)
+
+#Discord Admin Role ID
+adminRoleID: "906089806893834265" # Put the ID of a role that can use the bot commands
+
+#Bot will reply to commands sent in this channel only
+botCommandsChannelID: "906089809586577446" # Type "null" or keep it blank if you want the commands to be used in all channels.
+
+# Panel's Info
+panel:
+  url: 'https://manage.monitors.ml' # Put panel url here. Example: https://your.host.url (your.host.url is an example link)
+  adminkey: 'KVnRCDtzlFtcy3yBI7hTZnNBV4W4ZEYhX5AZ2b2pRTZdzYuh' # Put Admin Apikey here. check https://your.host.url/admin/api (your.host.url is an example link) to get the Admin ApiKey
+
+# Embed Configuration
+embed:
+  author:
+    enabled: false  # Enable Embed Author Name and Image (MUST BE "true" OR "false")
+    name: 'LuxuryHosting' # Embed Author Name. Ex- TestNodes
+    imageURL: '' # Author Image url. Note- image url should be loadable and should end with either png, jpg, jpeg, webp or gif 
+  title: 'Luxury Server Init' # Embed Title here. Ex: TestNodes Stats
+  color: 'PURPLE' # Embed color here. Ex: YELLOW OR you can provide a hex code Eg- 0xFFFF00
+  imageURL: '' # Embed image url.  Note- image url should be loadable and should end with either png, jpg, jpeg, webp or gif
+  thumbnailURL: '' # Embed thumbnail image url.  Note- image url should be loadable and should end with either png, jpg, jpeg, webp or gif
+  description: 
+    enable: false # Enable Embed Description (MUST BE "true" OR "false")
+    text: '' # Embed Description Text
+  footer: 
+    enable: false # Enable Embed Footer (MUST BE "true" OR "false")
+    text: '' # Embed Footer Text
+    imageURL: '' # Footer Image url
+  timestamp: false # Enable Embed TimeStamp (MUST BE "true" OR "false")
+
+# Status Message Configuration
+status:
+  online: ':green_circle:' # Message if the status is Online
+  offline: ':red_circle:' # Message if the status is Offline
+  check: ':orange_circle: Checking' # Message if the status is Checking
+
+# Node Resource
+resource:
+  enable: true # Enable resource option ex [Ram: 2gb/5gb] bellow node name (MUST BE "true" OR "false")
+  servers: true # Enable Total server on the node to resource text (MUST BE "true" OR "false")
+  allocations: true # Enable Total Allocation on the node to resource text (MUST BE "true" OR "false")
+  location: true # Enable location short name on the node to resource text (MUST BE "true" OR "false")
+
+# Developers feature
+debug: false # Enable and Disable debug log to console
+debugaxios: false #Enable and Disable axios error logs
